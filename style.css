@@ -3,9 +3,8 @@
 body {
     font-family: 'Outfit', sans-serif;
     background-color: hsl(212, 45%, 89%);
-    display: flex;
-    justify-content: center;    
-    align-items: center;
+    display: grid;
+    place-items: center;
     height: 100vh;
     margin: 0;
 }
@@ -17,6 +16,8 @@ body {
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0,0,0,0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    width: 70%;
+    max-width: 375px;
 }
 
 .card:hover{
@@ -47,5 +48,25 @@ p {
     font-size: 15px;
     width: 245px;
     margin-bottom: 15px;
+}
+
+@media (min-width: 1440px) {
+    .qr-code-img {
+        margin-top: 10px;
+    }
+
+    .card {
+        width: 270px;
+        padding: 10px;
+    }
+
+    h3 {
+        width: 260px;
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 16px;
+    }
 }
 
